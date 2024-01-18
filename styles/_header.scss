@@ -3,21 +3,24 @@ $phone: 667px;
 .header {
 	display: flex;
 	width: 100%;
-	gap: 20px;
+	gap: 20px;;
 	align-items: center;
 	padding: 50px 0;
+
 	@media screen and (max-width: $phone) {
 		gap: 0;
+		padding: 10px 0;
+		height: fit-content;
+		max-height: 150px;
 	}
+
 	&__logo {
 		width: 40%;
 		height: fit-content;
 		max-width: 300px;
-		@media screen and (max-width: $phone) {
-			height: 80px;
-			width: fit-content;
-		}
+		object-fit: contain;
 	}
+
 	#play_btn {
 		width: 100px;
 		height: 100px;
@@ -26,28 +29,30 @@ $phone: 667px;
 		background-color: transparent;
 		cursor: pointer;
 		outline: none;
+
 		&:hover {
 			background-color: rgba(255, 255, 255, 0.9);
-			
+
 		}
+
 		@media screen and (max-width: $phone) {
 			&:hover {
 				background-color: transparent;
-				
+
 			}
 		}
-		img{
+
+		img {
 			width: 100%;
 			height: 100%;
 		}
 	}
+
 	&__image {
 		margin-left: auto;
-		width: 10%;
+		width: 20%;
 		height: fit-content;
-		max-width: 100px;
-		@media screen and (max-width: $phone) {
-			display: none;
-		}
+object-fit: contain;
+max-width: 100px;
 	}
 }

@@ -57,6 +57,10 @@ table {
 @media screen and (max-width: 667px) {
   .header {
     gap: 0;
+    padding: 10px 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 150px;
   }
 }
 .header__logo {
@@ -64,13 +68,8 @@ table {
   height: -moz-fit-content;
   height: fit-content;
   max-width: 300px;
-}
-@media screen and (max-width: 667px) {
-  .header__logo {
-    height: 80px;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header #play_btn {
   width: 100px;
@@ -95,15 +94,12 @@ table {
 }
 .header__image {
   margin-left: auto;
-  width: 10%;
+  width: 20%;
   height: -moz-fit-content;
   height: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 100px;
-}
-@media screen and (max-width: 667px) {
-  .header__image {
-    display: none;
-  }
 }
 
 .show {
