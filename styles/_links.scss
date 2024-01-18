@@ -1,0 +1,30 @@
+$phone: 667px;
+
+.links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	padding: 20px 0;
+	&__title {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 60px;
+		@media screen and (max-width: $phone) {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+
+	a {
+		.links__image {
+			width: 50px;
+			object-fit: cover;
+			margin: auto 0;
+			mix-blend-mode: multiply;
+			@media screen and (max-width: $phone) {
+				width: 30px;
+			}
+		}
+	}
+}

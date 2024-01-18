@@ -1,0 +1,54 @@
+$phone: 667px;
+
+.ad {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #fff;
+	padding: 50px 0;
+	@media screen and (max-width: $phone) {
+		padding: 20px 0;
+	}
+
+	&__title {
+		color: #233B51;
+		font-size: 55px;
+		font-weight: 700;
+		line-height: 80px;
+		@media screen and (max-width: $phone) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+
+	&__grid {
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: 50px 1fr;
+		gap: 10px;
+		width: fit-content;
+
+		img {
+			width: 50px;
+			object-fit: cover;
+			margin: auto 0;
+			mix-blend-mode: multiply;
+			@media screen and (max-width: $phone) {
+				width: 30px;
+			}
+		}
+
+		h2 {
+			color: #233B51;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 50px;
+			@media screen and (max-width: $phone) {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+	}
+}

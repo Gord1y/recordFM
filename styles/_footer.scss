@@ -1,0 +1,17 @@
+$phone: 667px;
+
+.footer {
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 25px 0;
+	background: #fff;
+	@media screen and (max-width: $phone) {
+		font-size: 14px;
+		line-height: 14px;
+		padding: 15px 0;
+	}
+}
