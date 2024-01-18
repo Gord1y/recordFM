@@ -165,6 +165,7 @@ table {
   align-items: center;
   flex-direction: column;
   text-align: justify;
+  text-shadow: 0px 0px 4px #FFF;
 }
 @media screen and (max-width: 667px) {
   .show__contacts {
