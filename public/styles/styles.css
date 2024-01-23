@@ -110,7 +110,6 @@ table {
   background-image: url("../images/woman.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 .show__block {
   display: flex;
