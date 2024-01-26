@@ -8,7 +8,6 @@ $phone: 667px;
 	background-size: cover;
 	background-repeat: no-repeat;
 
-
 	&__block {
 		display: flex;
 		flex-direction: column;
@@ -72,7 +71,9 @@ $phone: 667px;
 					line-height: 16px;
 				}
 
-				span {
+				a {
+					color: #233B51;
+					text-decoration: none;
 					display: flex;
 					flex-direction: row;
 					gap: 5px;

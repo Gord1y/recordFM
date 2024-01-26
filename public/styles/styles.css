@@ -177,18 +177,20 @@ table {
     line-height: 16px;
   }
 }
-.show__block--upper div span {
+.show__block--upper div a {
+  color: #233B51;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   gap: 5px;
   align-items: center;
 }
-.show__block--upper div span img {
+.show__block--upper div a img {
   width: 50px;
   height: 50px;
 }
 @media screen and (max-width: 667px) {
-  .show__block--upper div span img {
+  .show__block--upper div a img {
     width: 20px;
     height: 20px;
   }
@@ -238,6 +240,19 @@ table {
 @media screen and (max-width: 667px) {
   .ad__grid img {
     width: 30px;
+  }
+}
+.ad__grid a {
+  color: #233B51;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+}
+@media screen and (max-width: 667px) {
+  .ad__grid a {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 .ad__grid h2 {

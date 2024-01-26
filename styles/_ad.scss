@@ -39,7 +39,17 @@ $phone: 667px;
 				width: 30px;
 			}
 		}
-
+		a{
+			color: #233B51;
+			text-decoration: none;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 50px;
+			@media screen and (max-width: $phone) {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
 		h2 {
 			color: #233B51;
 			font-size: 32px;
