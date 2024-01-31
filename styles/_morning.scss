@@ -6,14 +6,16 @@ $tablet: 1024px;
 	height: fit-content;
 	position: relative;
 	background-color: #FFF;
+	margin: 0;
+	padding: 0;
 
 	&__bg {
+		position: relative;
 		width: 100%;
-		height: fit-content;
-		object-fit: contain;
 	}
 
 	&__block {
+		z-index: 1;
 		position: absolute;
 		width: 90%;
 		top: 0;
@@ -25,7 +27,9 @@ $tablet: 1024px;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+
 		padding: 50px 0;
+		gap: 20px;
 
 		@media screen and (max-width: $tablet) {
 			padding: 25px 0;
@@ -33,6 +37,7 @@ $tablet: 1024px;
 		}
 
 		@media screen and (max-width: $phone) {
+			width: 95%;
 			padding: 10px 0;
 			gap: 10px;
 		}
