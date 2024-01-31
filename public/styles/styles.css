@@ -276,9 +276,9 @@ table {
   transform: translateX(-50%);
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px 0;
   gap: 20px;
 }
